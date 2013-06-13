@@ -10,7 +10,6 @@
 
   
   <link rel="stylesheet" href="stylesheets/app.css" />
-   <link rel="stylesheet" href="stylesheets/screen.css" />
 
 
 
@@ -56,7 +55,9 @@
 <section class="row">
 	<div class="large-8 columns">
 
-<div>
+<!-- This is to be a sticky post -->
+
+<div classs="sticky">
 <h2>Showreel 2013</h2>	
 <div class="video-container"><iframe width="560" height="315" src="http://www.youtube.com/embed/fyBx01xzkvw" frameborder="0" allowfullscreen></iframe></div>
 
@@ -69,6 +70,7 @@
 <hr>
 </div>
 
+<!-- This is to be a sticky post -->
 
 <div>
 <h2>The Movie Show with Chris O'DOWD</h2>	
@@ -201,7 +203,7 @@
 <script src="javascripts/plugins.js"></script>
 
 <script>
-  $(document).ready(function() {
+  $(document).foundation(function() {
 $('.bxslider').bxSlider({
   mode: 'fade',
 });
