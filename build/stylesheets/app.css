@@ -6241,59 +6241,102 @@ a.th {
 }
 
 /* _box.scss */
-/* line 6, ../../sass/screen.scss */
+/* line 19, ../../sass/screen.scss */
 .box-sizing-example {
   background: red;
 }
 
-/* line 16, ../../sass/screen.scss */
+/* line 27, ../../sass/screen.scss */
 .left {
   float: left !important;
 }
 
-/* line 17, ../../sass/screen.scss */
+/* line 28, ../../sass/screen.scss */
 .right {
   float: right !important;
 }
 
-/* line 18, ../../sass/screen.scss */
+/* line 29, ../../sass/screen.scss */
 .text-left {
   text-align: left !important;
 }
 
-/* line 19, ../../sass/screen.scss */
+/* line 30, ../../sass/screen.scss */
 .text-right {
   text-align: right !important;
 }
 
-/* line 20, ../../sass/screen.scss */
+/* line 31, ../../sass/screen.scss */
 .text-center {
   text-align: center !important;
 }
 
-/* line 21, ../../sass/screen.scss */
+/* line 32, ../../sass/screen.scss */
 .text-justify {
   text-align: justify !important;
 }
 
-/* line 22, ../../sass/screen.scss */
+/* line 33, ../../sass/screen.scss */
 .hide {
   display: none;
 }
 
-/* line 24, ../../sass/screen.scss */
+/* line 36, ../../sass/screen.scss */
+h1 {
+  font-size: 24px;
+}
+
+/* line 38, ../../sass/screen.scss */
+h2 {
+  font-size: 18px;
+  border-bottom: solid 1px black;
+  text-transform: uppercase;
+}
+
+/* line 42, ../../sass/screen.scss */
+p {
+  font-size: 16px;
+}
+
+/* line 51, ../../sass/screen.scss */
+div.broadcast h2 {
+  font-size: 24px;
+  padding-bottom: 10px;
+  border: none;
+}
+/* line 53, ../../sass/screen.scss */
+div.broadcast .video-container {
+  margin-bottom: 20px;
+}
+/* line 55, ../../sass/screen.scss */
+div.broadcast img {
+  display: inline-block;
+  margin: -5px 10px 0 0;
+}
+/* line 61, ../../sass/screen.scss */
+div.broadcast hr {
+  margin-bottom: 60px;
+}
+
+/* line 67, ../../sass/screen.scss */
+a {
+  color: black;
+}
+/* line 69, ../../sass/screen.scss */
+a:hover {
+  color: #1ecf73;
+}
+/* line 71, ../../sass/screen.scss */
+a:active {
+  text-decoration: underline;
+}
+
+/* line 76, ../../sass/screen.scss */
 li {
   list-style: none;
 }
 
-/* line 28, ../../sass/screen.scss */
-.box {
-  outline: 1px solid #99999a;
-  *border: 1px solid #99999a;
-  min-height: 50px;
-}
-
-/* line 35, ../../sass/screen.scss */
+/* line 81, ../../sass/screen.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -6301,11 +6344,8 @@ li {
   height: 0;
   overflow: hidden;
 }
-
-/* line 43, ../../sass/screen.scss */
-.video-container iframe,
-.video-container object,
-.video-container embed {
+/* line 83, ../../sass/screen.scss */
+.video-container iframe, .video-container object, .video-container embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -6313,7 +6353,78 @@ li {
   height: 100%;
 }
 
-/* line 52, ../../sass/screen.scss */
+/* line 86, ../../sass/screen.scss */
 li.columns.panel:last-child {
   float: left;
+}
+
+/* line 88, ../../sass/screen.scss */
+.logo {
+  margin: 65px 0 65px 0;
+}
+/* line 90, ../../sass/screen.scss */
+.logo img {
+  margin: 0 auto;
+  display: block;
+}
+
+/* line 95, ../../sass/screen.scss */
+footer p {
+  text-align: center;
+  font-size: 11px;
+  padding-top: 30px;
+}
+/* line 97, ../../sass/screen.scss */
+footer span.icon img {
+  margin: 0 auto;
+  display: block;
+  padding: 20px;
+}
+
+/* line 104, ../../sass/screen.scss */
+header {
+  padding-bottom: 30px;
+}
+/* line 106, ../../sass/screen.scss */
+header div {
+  display: inline-block;
+}
+/* line 108, ../../sass/screen.scss */
+header ul li {
+  display: inline;
+}
+/* line 110, ../../sass/screen.scss */
+header ul.nav li {
+  padding-right: 5%;
+}
+/* line 112, ../../sass/screen.scss */
+header ul.social li {
+  padding-left: 3%;
+}
+
+/* line 119, ../../sass/screen.scss */
+.large-4 {
+  margin-bottom: 30px;
+}
+
+/* line 121, ../../sass/screen.scss */
+hr {
+  border: solid #000000;
+  border-width: 1px 0 0;
+}
+
+/* line 124, ../../sass/screen.scss */
+ul.social img {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #000;
+  height: 36px;
+  width: 36px;
+}
+/* line 127, ../../sass/screen.scss */
+ul.social img:hover {
+  background-color: #1ecf73;
 }
