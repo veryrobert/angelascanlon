@@ -16,6 +16,16 @@ $green:#1ecf73;
 @mixin no-border {border: none;}
 
 
+.box {@include box;}
+
+.slider  {
+
+ul { margin:0px; }
+
+li { border: 15px solid white;}
+
+}
+
 .box-sizing-example {
   background: red;
 
@@ -85,6 +95,20 @@ iframe, object, embed { position: absolute;  top: 0; left: 0;  width: 100%; heig
 
 li.columns.panel:last-child { float: left; }
 
+
+
+.bx-wrapper .bx-prev {
+  left: 10px;
+  background: url(/images/prev.svg) no-repeat 0 -36px;
+}
+
+.bx-wrapper .bx-next {
+  right: 10px;
+  background: url(/images/next.svg) no-repeat -43px -36px;
+}
+
+
+
 .logo { 
   margin: 65px 0 65px 0;
   img {   @include center; @include block; } 
@@ -105,15 +129,17 @@ header { padding-bottom: 30px;
 
 div { display: inline-block;}
 
-ul li {display: inline;}
+ul { margin-right: 15px;
+
+li {display: inline;}
+
+}
 
 ul.nav li { padding-right: 5%;}
 
 ul.social li {padding-left: 3%;}
 
 }
-
-
 
 
 .large-4 { margin-bottom: 30px; }
@@ -129,6 +155,8 @@ ul.social img { @include border-radius(20px);
 
 }
 
-
+header div ul.social {
+margin-right: 20px;
+}
 
 
