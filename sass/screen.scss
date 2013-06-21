@@ -83,9 +83,16 @@ display: none;
 }
 
   .left         { float: left !important; }
-  .right        { float: right !important; }
+  .right        { float: right !important; 
+
+@media only screen and (max-width: 767px) {
+  /* Small Device Styles here */ float:left;
+}
+
+
+  }
   .text-left    { text-align: left !important; }
-  .text-right   { text-align: right !important; }
+  .text-right   { text-align: right ; }
   .text-center  { text-align: center !important; }
   .text-justify { text-align: justify !important; }
   .hide         { display: none; }
@@ -205,6 +212,7 @@ ul.nav li { padding-right: 5%;}
 
 ul.social li {padding-left: 3%;}
 
+
 }
 
 
@@ -223,6 +231,9 @@ ul.social img { @include border-radius(20px);
 
 header div ul.social {
 margin-right: 20px;
+
+
+
 
 }
 
@@ -286,8 +297,53 @@ figure:hover:before {
 .cap-bot figcaption { left: 0; bottom: -30%;}
 .cap-bot:hover figcaption { bottom: 0; }
 
+div.large-4 img, div.large-3 img,  {
 
+@media only screen and (max-width: 767px) {
+  /* Small Device Styles here */ width: 100%;
+}
 
+}
 
+header div ul.social {
+
+@media only screen and (max-width: 767px) {
+  /* Small Device Styles here */ width: 100%; 
+}
+
+}
+
+ ul.social   {
+
+@media only screen and (max-width: 767px) {
+float: left !important; width: 100%;  margin-left: 22%;
+}
+
+}
+
+header div, ul.social   {
+
+@media only screen and (max-width: 767px) {
+width: 100%;
+
+}
+
+}
+
+.right {
+
+@media only screen and (max-width: 767px) {
+float: left !important;
+}
+
+}
+
+.logo{
+
+@media only screen and (max-width: 767px) {
+  /* Small Device Styles here */ width: 100%;
+}
+
+}
 
 
