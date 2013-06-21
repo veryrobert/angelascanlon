@@ -136,7 +136,7 @@ hr { margin-bottom: 60px;}
 
 
 aside {
-margin-top: 35px;
+margin-top: 0px;
 
 h3 { border-bottom: solid 1px #000;}
 
@@ -297,7 +297,7 @@ figure:hover:before {
 .cap-bot figcaption { left: 0; bottom: -30%;}
 .cap-bot:hover figcaption { bottom: 0; }
 
-div.large-4 img, div.large-3 img,  {
+div.large-4 img, div.large-3 img, aside img, aside, .large-4  {
 
 @media only screen and (max-width: 767px) {
   /* Small Device Styles here */ width: 100%;

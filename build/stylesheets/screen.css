@@ -182,7 +182,7 @@ div.broadcast hr {
 
 /* line 138, ../../sass/screen.scss */
 aside {
-  margin-top: 35px;
+  margin-top: 0px;
 }
 /* line 141, ../../sass/screen.scss */
 aside h3 {
@@ -446,7 +446,7 @@ figure:hover:before {
 
 @media only screen and (max-width: 767px) {
   /* line 300, ../../sass/screen.scss */
-  div.large-4 img, div.large-3 img {
+  div.large-4 img, div.large-3 img, aside img, aside, .large-4 {
     /* Small Device Styles here */
     width: 100%;
   }
