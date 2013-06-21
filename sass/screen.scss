@@ -16,6 +16,21 @@ $green:#1ecf73;
 @mixin no-border {border: none;}
 
 
+// h1, h2, h3, 
+// h4, h5, h6      { font-family: $helvetica; color:$dark-grey; width:auto; }
+
+
+h1, .h-large    { font-size: 30px; }
+h2, .h-reg      { font-size: 26px; }
+h3, .h-small    { font-size: 18px; }
+h4, .h-small    { font-size: 16px; }
+
+h4 { ;
+
+&.date { margin-top: -25px; margin-left: 26px; }
+
+}
+
 .box {@include box;}
 
 .slider  {
@@ -26,12 +41,45 @@ li { border: 15px solid white;}
 
 }
 
+
+// Tweets 
+
+.tweets {
+
+h3 {border-bottom: solid 1px #000;}
+a { color:$green;} 
+
+p { padding-bottom: 5px; margin-bottom: 0px; color:#000;}
+
+ul {
+margin-left: 0;
+}
+
+.timePosted { color:#ccc; font-size: 12px; padding-top: 5px; margin-bottom: 5px;}
+.tweet { font-size: 14px;
+padding-bottom: 0px;
+margin: 0px;
+}
+
+.user img {
+display: none;
+}
+
+.user span {font-size: 14px; width: 110px}
+
+[title='Verified Account']
+{
+display: none;
+}
+
+
+
+}
 .box-sizing-example {
   background: red;
 
   // border-right: 15px solid white;
   // width: 200px
-
 }
 
   .left         { float: left !important; }
@@ -73,6 +121,24 @@ hr { margin-bottom: 60px;}
 }
 
 
+.post-wrap { margin: 60px 0 40px;
+
+}
+
+.post img {margin: 10px 0px 10px 0px;}
+
+
+aside {
+margin-top: 35px;
+
+h3 { border-bottom: solid 1px #000;}
+
+.archive ul, .Categories ul {margin-left: 0px;}
+
+img {margin-bottom: 20px;}
+
+}
+
 
 a { color:$black; 
 
@@ -93,7 +159,7 @@ position: relative;  padding-bottom: 56.25%;  padding-top: 30px; height: 0; over
 iframe, object, embed { position: absolute;  top: 0; left: 0;  width: 100%; height: 100%; }
 }
 
-li.columns.panel:last-child { float: left; }
+li.columns.large-4:last-child { float: left; }
 
 
 
@@ -157,6 +223,71 @@ ul.social img { @include border-radius(20px);
 
 header div ul.social {
 margin-right: 20px;
+
 }
+
+ul.social { margin: 0px;
+
+li {
+display: inline;
+margin: 0px;
+}
+}
+
+// <figure class="cap-bot">
+//       <img src="images/4.jpg" alt="">
+//       <figcaption>The green and pleasant lands of the Shire in Eriador - just West of the Brandywine River and East of the Far Downs.</figcaption>
+//     </figure>
+    
+
+
+
+figure img { width: 395px; display: block; }
+
+
+figure { 
+  display: block; 
+  position: relative; 
+  float: left; 
+  overflow: hidden; 
+  margin: 0 0px 0px 0;
+}
+figcaption { 
+  position: absolute; 
+  background: rgba(0,0,0,0.75); 
+  color: white; 
+  padding: 10px 20px; 
+  opacity: 0;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition:    all 0.6s ease;
+  -o-transition:      all 0.6s ease;
+}
+figure:hover figcaption {
+  opacity: 1;
+}
+
+figure:hover:before {
+  opacity: 0;
+}
+
+.cap-left:before {  bottom: 10px; left: 10px; }
+.cap-left figcaption { bottom: 0; left: -30%; }
+.cap-left:hover figcaption { left: 0; }
+
+.cap-right:before { bottom: 10px; right: 10px; }
+.cap-right figcaption { bottom: 0; right: -30%; }
+.cap-right:hover figcaption { right: 0; }
+
+.cap-top:before { top: 10px; left: 10px; }
+.cap-top figcaption { left: 0; top: -30%; }
+.cap-top:hover figcaption { top: 0; }
+
+.cap-bot:before { bottom: 10px; left: 10px; }
+.cap-bot figcaption { left: 0; bottom: -30%;}
+.cap-bot:hover figcaption { bottom: 0; }
+
+
+
+
 
 
